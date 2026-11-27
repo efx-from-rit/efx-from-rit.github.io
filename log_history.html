@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Journal Week View</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      gap: 15px;
+    }
+
+    h1 {
+      font-family: serif;
+      border: 1px solid #000;
+      padding: 15px;
+      width: 450px;
+      text-align: center;
+    }
+
+    article {
+      width: 450px;
+      border: 1px solid #000;
+      padding: 12px 15px;
+    }
+
+    article.expanded {
+      height: 240px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    article p {
+      margin: auto;
+    }
+
+    aside {
+      width: 110px;
+      border-left: 1px solid #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    aside span {
+      display: block;
+      font-size: 28px;
+      margin-bottom: 4px;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      border-top: 1px solid #000;
+      border-right: 1px solid #000;
+      padding: 10px 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <h1>Week of 10/7 - 10/14</h1>
+
+    <article>Log #31 12:41 pm 10/10/2026</article>
+    <article>Log #30 9:35 am 09/10/2026</article>
+
+    <article class="expanded">
+      Log #29 10:24 am 08/10/2026
+      <p>Description of Log</p>
+    </article>
+  </main>
+
+  <aside>
+    <div>MindBloom</div>
+    <div><span>🏠️</span>Home</div>
+    <div><span>⚙️</span>Settings</div>
+    <div><span>📜️</span>Journal</div>
+    <div><span>&#9211;</span>Focus</div>
+  </aside>
+
+  <footer>
+    Date: October 14th, 2026<br>
+    Time: 8:40 PM
+  </footer>
+</body>
+</html>
