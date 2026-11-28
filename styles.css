@@ -1,0 +1,19 @@
+body {
+    background-color: lightgray;
+}
+
+#page-title {
+    text-align: center;
+}
+
+h2 {
+    color: teal;
+}
+
+.complete {
+    color: green;
+}
+
+.locked {
+    color: red;
+}
